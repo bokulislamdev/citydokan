@@ -1,0 +1,100 @@
+@media only screen and (max-width:1199px) {}
+
+
+@media only screen and (max-width:991px) {
+
+    .menubar > ul > li > a {
+        padding: 5px !important;
+    }
+
+    .logo a img {
+        width: 90px;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+
+    .logo {
+        display: inline-block;
+    }
+
+    .sub-btn a span {
+        padding: 0 6px;
+    }
+
+    .sub-menu > a {
+        font-size: 14px;
+    }
+
+    .logo a img {
+        width: 100px;
+    }
+
+    .copyright-menu {
+        text-align: center;
+    }
+
+    .copyright p {
+        text-align: center;
+        font-size: 14px;
+    }
+    .footer-social{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .footer-social span{
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:575px) {
+    body {
+        font-size: 14px;
+    }
+    
+
+    .logo a img {
+        width: 102px;
+    }
+
+
+    .footer-head h6 {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-head ul li a {
+        font-size: 14px;
+    }
+
+    .mobileAdd {
+        left: 0 !important;
+        width: 100%;
+    }
+
+    .logo a img {
+        width: 80px;
+    }
+
+    .home-section p {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .home-section h1 {
+        font-size: 41px;
+        line-height: 50px;
+    }
+
+    .footer-social span{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:500px) {}
