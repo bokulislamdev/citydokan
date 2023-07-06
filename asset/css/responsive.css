@@ -10,6 +10,9 @@
     .logo a img {
         width: 90px;
     }
+      .search-content > div {
+    width: 50%;
+    }
 
 }
 
@@ -81,19 +84,24 @@
         width: 80px;
     }
 
+   .home-section h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+      .search-content > div {
+    width: 100%;
+    }
+    .home-section h6 {
+    font-size: 50px;
+}
     .home-section p {
-        font-size: 32px;
-        line-height: 35px;
-    }
+    font-size: 16px;
+}
+    .section-title h4 {
+    font-size: 30px;
+}
 
-    .home-section h1 {
-        font-size: 41px;
-        line-height: 50px;
-    }
-
-    .footer-social span{
-        display: none;
-    }
+ 
 
 }
 

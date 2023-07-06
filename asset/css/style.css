@@ -28,6 +28,7 @@
 /*HEADER*/
 header {
     position: sticky;
+    top: 0px;
     width: 100%;
     z-index: 2;
     background: var(--wc);
@@ -40,7 +41,7 @@ header {
 }
 
 .logo a img {
-    width: 120px;
+    width: 110px;
 }
 
 .logo.menubar-mobile {
@@ -64,7 +65,7 @@ header {
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .menubar > ul > li > a:hover {
@@ -408,65 +409,13 @@ header .fa-bars {
     background: #F3FEFF;
 }
 
-.search-form input {
-    width: 50%;
-    padding: 10px;
-    padding-left: 30px;
-    font-weight: 500;
-    color: #9E9E9E;
-    border: none;
-    background: var(--wc);
-    outline: none;
-}
-
-.search-form select {
-    width: 50%;
-    padding: 10px;
-    font-weight: 500;
-    color: #9E9E9E;
-    border: none;
-    background: #F2F2FF;
-    outline: none;
-    border-radius: 10px;
-
-}
-
-.search-form .search-input {
-    border: 1px solid var(--tc);
-    padding: 5px;
-    background: var(--wc);
-    border-radius: 10px;
-
-}
-
-.search-form .search-input input {
-    background-image: url(../images/icons/search.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 24px;
-    color: #9E9E9E;
-}
-
-.search-form button {
-    background: var(--tc);
-    color: var(--wc);
-    font-weight: 600;
-    height: 100%;
-    padding: 8px 20px;
-    border: 1px solid #5D5FEF;
-    border-radius: 10px;
-    margin-left: 10px;
-}
-
 .home-image img {
     width: 100%;
 }
 
 .home-section p {
-    font-weight: 300;
-    font-size: 35px;
-    line-height: 42px;
-    color: #757575;
+    font-size: 18px;
+    max-width: 500px;
 }
 
 .home-section h1 {
@@ -478,11 +427,241 @@ header .fa-bars {
 .home-section h6{
     font-family: 'Satisfy', cursive;
     font-size: 70px;
-    color: #FFB31B;
+    color: var(--yc);
     padding-bottom: 10px;
+}
+.home-btn a:first-child{
+    color: var(--wc);
+    background: var(--yc);
+    padding: 4px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--yc);
+    transition: .3s;
+}
+.home-btn a:first-child:hover{
+    color: var(--pc);
+    background: var(--wc);
+}
+.home-btn a:last-child{
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 /*HOEM SECTION END*/
 
+/*SEARCH SECTION*/
+.search-section{
+    position: relative;
+    margin-top: -60px;
+}
+.search-content label {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.search-content > div {
+    width: 25%;
+    padding: 7px;
+}
+
+.search-content {
+    background: var(--wc);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.search-content select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: #424242;
+    border: 1px solid var(--gc);
+}
+
+.search-content select:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid var(--sc);
+}
+
+.search-content input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: #424242;
+    border: 1px solid var(--gc);
+}
+
+.search-content input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid var(--sc);
+}
+
+.search-content label {
+    color: var(--gc);
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: inline-block;
+    top: -4px;
+}
+
+
+.search-content button {
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    background: var(--sc);
+    color: var(--wc);
+    border-radius: 5px;
+    padding: 15px 0;
+    height: 100%;
+}
+
+.search-content button i {
+    margin-right: 10px;
+}
+/*SEARCH SECTION END*/
+
+/*ABOUT SECTION*/
+.about-image img{
+    width: 100%;
+}
+.about-content h4{
+    color: var(--sc);
+}
+/*ABOUT SECTION END*/
+
+/*HOW TO SECTION*/
+.how-to-section{
+    background-image: url(../images/photos/app-bg.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.how-to-content img{
+    height: 200px;
+}
+.how-to-content{
+    text-align: center;
+}
+.how-to-content h5{
+    color: var(--sc);
+    padding-top: 15px;
+}
+/*HOW TO SECTION END*/
+
+/*CLIENT SECTION*/
+.client-section{
+    background-image: url(../images/photos/review-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+        background-size: cover;
+}
+.client-box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #FFEBEB;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+.client-box img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.client-box h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--pc);
+}
+.client-box span{
+    color: var(--pc2);
+    font-weight: 500;
+    font-size: 14px;
+}
+.client-box p{
+    color: var(--pc2);
+}
+.client-box span i{
+    color: var(--yc);
+}
+.client-box span i.bi-star{
+    color: var(--wc);
+}
+.client-box img{
+    height: 60px;
+    width: 60px;
+    border: 1px solid var(--sc);
+    padding: 2px;
+}
+.slider-box {
+    position: relative;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    right: 18px;
+    height: 35px;
+    width: 35px;
+    z-index: 1;
+    transform: translateY(-50%);
+    line-height: 35px;
+    background: var(--wc);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 13px -5px #919191;
+    border: 1px solid rgba(145, 145, 145, 0.1);
+    transition: .4s;
+    color: var(--pc);
+}
+
+.next:hover {
+    color: var(--sc);
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    left: 18px;
+    height: 35px;
+    width: 35px;
+    z-index: 1;
+    transform: translateY(-50%);
+    line-height: 35px;
+     background: var(--wc);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 13px -5px #919191;
+    border: 1px solid rgba(145, 145, 145, 0.1);
+    transition: .4s;
+    color: var(--pc);
+
+}
+.prev:hover {
+    color: var(--sc);
+}
+
+/*CLIENT SECTION END*/
 
 /*FOOTER*/
 footer {
@@ -568,11 +747,7 @@ footer {
     font-size: 14px;
     margin-right: 5px;
 }
-.footer-social span{
-    color: var(--wc);
-    font-size: 16px;
-    padding-right: 20px;
-}
+
 .copyright {
     border-top: 1px solid #374058;
 }

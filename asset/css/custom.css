@@ -5,6 +5,7 @@
     --wc: #ffffff;
     --bc: #000000;
     --gc: #9E9E9E;
+    --yc: #FFB31B;
 }
 
 
@@ -17,7 +18,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: var(--pc);
-    background: #F5F5F5;
+    background: var(--wc);
 
 }
 
@@ -88,4 +89,78 @@ button {
     font-size: 14px;
     line-height: 24px;
     margin: 0 auto;
+}
+.custom-btn{
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 1px solid var(--sc);
+    background: var(--wc);
+    font-weight: 500;
+    transition: .3s;
+}
+.custom-btn:hover{
+    color: var(--wc);
+    background: var(--sc);
+}
+
+
+
+/* Preloader */
+#pre-loader {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden !important;
+    right: 0px;
+    z-index: 999999;
+}
+
+#pre-loader img {
+    text-align: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    margin: 0 auto;
+}
+
+/*scrollup*/
+.scrollup{
+    height:   40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    background: var(--sc);
+    cursor: pointer;
+    display: none;
+    border: 2px solid var(--sc);
+    transition: .3s;
+    
+}
+.scrollup i{
+    font-size: 20px;
+    color: var(--wc);
+        transition: .3s;
+}
+.scrollup:hover{
+    background: none;
+}
+.scrollup:hover i{
+    color: var(--sc);
+}
+.bg-gray{
+    background: #f7f7f7;
 }
