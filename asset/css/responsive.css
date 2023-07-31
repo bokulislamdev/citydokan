@@ -10,8 +10,9 @@
     .logo a img {
         width: 90px;
     }
-      .search-content > div {
-    width: 50%;
+
+    .search-content > div {
+        width: 50%;
     }
 
 }
@@ -42,12 +43,27 @@
         text-align: center;
         font-size: 14px;
     }
-    .footer-social{
+
+    .footer-social {
         text-align: center;
         padding-top: 10px;
     }
-    .footer-social span{
+
+    .footer-social span {
         font-size: 14px;
+    }
+
+    .favorit-middle input {
+        display: inline-block;
+    }
+
+    .custom-btn.faverit-button {
+        margin-left: 10px;
+    }
+
+    .favorit-middle input {
+        height: 18px;
+        width: 18px;
     }
 
 
@@ -58,7 +74,7 @@
     body {
         font-size: 14px;
     }
-    
+
 
     .logo a img {
         width: 102px;
@@ -84,24 +100,28 @@
         width: 80px;
     }
 
-   .home-section h1 {
-    font-size: 30px;
-    line-height: 40px;
-}
-      .search-content > div {
-    width: 100%;
+    .home-section h1 {
+        font-size: 30px;
+        line-height: 40px;
     }
-    .home-section h6 {
-    font-size: 50px;
-}
-    .home-section p {
-    font-size: 16px;
-}
-    .section-title h4 {
-    font-size: 30px;
-}
 
- 
+    .search-content > div {
+        width: 100%;
+    }
+
+    .home-section h6 {
+        font-size: 50px;
+    }
+
+    .home-section p {
+        font-size: 16px;
+    }
+
+    .section-title h4 {
+        font-size: 30px;
+    }
+
+
 
 }
 

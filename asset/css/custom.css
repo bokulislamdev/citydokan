@@ -80,7 +80,7 @@ button {
     font-size: 35px;
     font-weight: 600;
     line-height: 42px;
-    color: var(--pc2);
+    color: var(--sc);
 }
 
 .section-title p {
@@ -102,7 +102,14 @@ button {
     color: var(--wc);
     background: var(--sc);
 }
-
+.custom-btn.fill-btn{
+    background: var(--sc);
+    color: var(--wc);
+}
+.custom-btn.fill-btn:hover{
+    background: var(--wc);
+    color: var(--sc);
+}
 
 
 /* Preloader */
