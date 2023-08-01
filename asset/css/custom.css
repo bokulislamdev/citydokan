@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --pc: #424242;
     --pc2: #616161;
@@ -90,23 +97,29 @@ button {
     line-height: 24px;
     margin: 0 auto;
 }
-.custom-btn{
+
+.custom-btn {
     padding: 5px 15px;
     border-radius: 15px;
     border: 1px solid var(--sc);
     background: var(--wc);
     font-weight: 500;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
-.custom-btn:hover{
+
+.custom-btn:hover {
     color: var(--wc);
     background: var(--sc);
 }
-.custom-btn.fill-btn{
+
+.custom-btn.fill-btn {
     background: var(--sc);
     color: var(--wc);
 }
-.custom-btn.fill-btn:hover{
+
+.custom-btn.fill-btn:hover {
     background: var(--wc);
     color: var(--sc);
 }
@@ -134,14 +147,16 @@ button {
     position: absolute;
     right: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 99;
     margin: 0 auto;
 }
 
 /*scrollup*/
-.scrollup{
-    height:   40px;
+.scrollup {
+    height: 40px;
     width: 40px;
     line-height: 40px;
     text-align: center;
@@ -154,20 +169,28 @@ button {
     cursor: pointer;
     display: none;
     border: 2px solid var(--sc);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
-    
+
 }
-.scrollup i{
+
+.scrollup i {
     font-size: 20px;
     color: var(--wc);
-        transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 }
-.scrollup:hover{
+
+.scrollup:hover {
     background: none;
 }
-.scrollup:hover i{
+
+.scrollup:hover i {
     color: var(--sc);
 }
-.bg-gray{
+
+.bg-gray {
     background: #f7f7f7;
 }

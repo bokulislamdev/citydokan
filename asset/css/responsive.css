@@ -1,6 +1,3 @@
-@media only screen and (max-width:1199px) {}
-
-
 @media only screen and (max-width:991px) {
 
     .menubar > ul > li > a {
@@ -121,8 +118,63 @@
         font-size: 30px;
     }
 
+    .search-content button {
+        font-size: 16px;
+    }
+
+    .dokan-details table,
+    th,
+    td {
+        font-size: 16px;
+    }
+
+    .favorite-main h4 {
+        font-size: 22px;
+    }
+
+    .favorite-main p {
+        font-size: 15px;
+    }
+
+    .favorit-middle input {
+        height: 16px;
+        width: 16px;
+    }
+
+    .pd-price div span {
+        font-size: 30px;
+    }
+
+    .pd-price div del {
+        font-size: 30px;
+    }
+
+    .pd-price div > i {
+        font-size: 20px;
+    }
+
+    .pd-price span i {
+        font-size: 20px;
+    }
+
+    .gift-btn.gift-custom-btn a {
+        padding: 8px;
+    }
+
+    .gift-btn a {
+        font-size: 13px;
+    }
+
+    .footer-review-btn a {
+        padding: 7px 22px;
+    }
+
+    .review-box img {
+        height: 80px;
+        width: 80px;
+    }
+
+
 
 
 }
-
-@media only screen and (max-width:500px) {}
