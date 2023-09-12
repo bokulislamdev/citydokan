@@ -1502,6 +1502,7 @@ td {
 .dashboard-title h6 {
     margin: 0;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .dashboard-body{
@@ -1610,6 +1611,21 @@ td {
 .order-product .qty p span{
     color: #cccccc;
 }
+.order-product .product-review a{
+    padding: 2px 10px;
+    background: var(--sc);
+    border-radius: 8px;
+    color:  #ffffff !important;
+    font-size: 14px;
+}
+.order-product .product-review a:hover{
+    opacity: 0.8;
+}
+.order-product .review a{
+    color: var(--sc);
+    font-size: 14px;
+    font-weight: 500;
+}
 .order-product  .delevird{
     font-size: 12px;
     background: #cccccc;
@@ -1624,6 +1640,35 @@ td {
 }
 .order-product .p-main p{
     max-width: 300px;
+    margin: 0;
+}
+.order-product .attribute span{
+    color: #808080;
+    font-size: 14px;
+}
+.order-product .price b{
+    color: var(--sc);
+}
+.order-product .price p{
+    font-weight: 500;
+    margin: 0;
+}
+.order-product .price p del{
+    color: #919191;
+}
+.order-product .price span{
+    color: green;
+    font-size: 14px;
+    font-weight: 500;
+}
+.order-product .product-cart a{
+    background: var(--sc);
+    padding: 4px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.order-product .product-cart a i{
+    font-size: 15px;
 }
 @media only screen and (max-width:991px) {
     .dashboard-left-menubar{
@@ -1645,4 +1690,103 @@ td {
     }
     
 }
+
+/* order detaisl */
+.d_order-details .order-number p{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 500;
+}
+.d_order-details .order-number span{
+    color: #868686;
+    font-size: 14px;
+}
+.d_order-details .order-number .total p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.d_order-details .package-header h6{
+    margin: 0;
+    font-weight: 500;
+}
+.d_order-details .package-header p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.d_order-details .package-header p span{
+    color: var(--sc);
+}
+.d_order-details .package-header a{
+    color: var(--sc);
+    font-size: 14px;
+    font-weight: 500;
+}
+.d_order-details .card-body .delivery-data p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.d_order-details  .card-body .delivery-box{
+    border: 1px solid #d8d8d8;
+    padding: 8px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    max-width: 700px;
+    margin:  0 auto;
+}
+.d_order-details  .card-body .delivery-box p{
+    font-size: 14px;
+    margin: 0;
+}
+.d_order-details  .card-body .delivery-box  p span{
+    color: #838383;
+}
+.d_order-details  .card-body .delivery-box  a{
+    color: var(--sc);
+    font-weight: 500;
+    font-size: 14px;
+}
+.d_order-details .order-address h6{
+    font-weight: 500;
+}
+.d_order-details .order-address p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.d_order-details .order-address p span{
+    background: var(--sc);
+    padding: 1px 8px;
+    color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+}
+.my-review .my-star i{
+    color: rgb(226, 192, 0);
+}
+.my-review span i{
+    color: var(--sc);
+    margin-right: 15px;
+}
+.my-review a{
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 3px;
+    transition: .2s;
+}
+.my-review a:hover{
+    border: 1px solid var(--sc);
+}
+.my-review .comment p{
+    color: var(--pc);
+}
+.my-review .screenshort img{
+    width: 150px;
+}
+/* order detaisl end*/
+
+
 /*DASHBOARD END*/

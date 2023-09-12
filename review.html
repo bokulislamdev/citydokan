@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traincu</title>
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- FONTAWSOME6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--    BOOSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--    GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/slick.css">
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- preloader start -->
+    <div id="pre-loader"> <img src="asset/images/icons/preloader.svg" alt=""> </div>
+    <!-- preloader end -->
+
+    <!--    scrollup-->
+    <div class="scrollup" id="scrollup">
+        <i class="bi bi-arrow-up-short"></i>
+    </div>
+    <!--    scrollup end-->
+
+    <!--    HEADER TOP-->
+    <section class="header-top py-2 py-sm-3">
+        <div class="container">
+            <div class="d-flex justify-content-between ">
+                <div class="header-top-left wow animate__animated  animate__fadeInDown">
+                    <span>
+                        WELCOME TO BADHIKA
+                    </span>
+                    <span>
+                        <i class="bi bi-telephone"></i>
+                        CALL US : 01403109511
+                    </span>
+                </div>
+                <div class="header-rop-right d-none d-md-block animate__animated wow  animate__fadeInDown">
+                    <ul>
+                        <li class="sub-btn">
+                            <a href="#">
+                                <i class="bi bi-person-circle"></i>
+                                Accounts
+                            </a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <a href="login.html">Login</a>
+
+                                    <li class="child-btn">
+                                        <a href="javascript:void(0)">Register <i class="bi bi-chevron-right"></i></a>
+                                        <div class="child-menu">
+                                            <a href="register.html">As a Shop Owner </a>
+                                            <a href="register.html">As a Shop Customer</a>
+                                            <a href="register.html">As a Shop Agent</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    HEADER TOP END-->
+
+    <!--    HEADER SECTION-->
+    <header class="py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3">
+                    <div class="logo d-flex justify-content-between align-items-center w-100">
+                        <a href="#">
+                            <img src="asset/images/logo/logo.png" alt="">
+                        </a>
+                        <i class="fa fa-bars d-lg-none" onClick="mobileClick()"></i>
+                    </div>
+                </div>
+                <div class="d-none col-lg-9 d-lg-block ">
+                    <div class="menubar wow animate__animated  animate__fadeInDown">
+                        <ul>
+                            <li><a href="index.html" class="menu-active">HOME</a></li>
+                            <li><a href="dokan.html">CITY DOKAN</a></li>
+                            <li><a href="#">ONLINE DOKAN</a></li>
+                            <li><a href="gift.html">GIFT</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#"><i class="bi bi-cart2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    HEADER SECTION END-->
+
+
+
+    <!--    MOBILE MENU-->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-3">
+                <a href="#">
+                    <img src="asset/images/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="index.html">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            HOME
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="dokan.html">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            CITY DOKAN
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            ONLINE DOKAN
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="gift.html">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            GIFT
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            ABOUT
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Contact
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Cart
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="login.html">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            LOG IN
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        REGISTER
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="register.html"><i class="fa fa-chevron-right"></i>As a Shop Owner</a></li>
+
+                            <li><a href="register.html"><i class="fa fa-chevron-right"></i>As a Shop Customer</a></li>
+                            <li><a href="register.html"><i class="fa fa-chevron-right"></i>As a Shop Agent</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--    MOBILE MENU END-->
+
+
+    <div class="dashboard-main py-5">
+        <div class="container">
+            <div class="dashboard-bar pb-3  d-lg-none">
+                <i class="fa fa-bars" onclick="dMobileClick()"></i>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 dashboard-left-menubar">
+                    <div class="d-close-btn d-lg-none">
+                        <i class="fa fa-times" onclick="dMobileClick()"></i>
+                    </div>
+                    <div class="dashboard-menu">
+                        <div>
+                            <ul>
+                                <li class="d-title">
+                                    <a href="#">Manage Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-person-check"></i>
+                                        My profile
+                                    </a>
+                                </li>
+                                <li class="d-active">
+                                    <a href="#">
+                                        <i class="bi bi-map"></i>
+                                        Address book
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-box2-heart"></i>
+                                        Voucher
+                                    </a>
+                                </li>
+
+                                <li class="d-title">
+                                    <a href="#">My Orders</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                        Return Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-x-circle"></i>
+                                        Cancellation Order
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="dashboard-main h-100">
+                        <div class="dashboard-title">
+                            <h6>My Reviews</h6>
+                        </div>
+                        <div class="dashboard-body">
+
+
+                            <div class="dashboard-tabs">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">To Review</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">History</button>
+                                    </li>
+
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                        <div class="order-product">
+                                            <div class="row">
+                                                <div class="col-md-6 px-2">
+                                                    <div class="card custom-card mb-3">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between gap-1 flex-wrap">
+                                                                <div class="p-main d-flex flex-wrap">
+                                                                    <img class="order-product"
+                                                                        src="asset/images/photos/product.png" alt="">
+                                                                    <p>Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Natus, dolores?</p>
+                                                                </div>
+                                                                <div class="product-review">
+                                                                    <a href="#">Review</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 px-2">
+                                                    <div class="card custom-card mb-3">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between gap-1 flex-wrap">
+                                                                <div class="p-main d-flex flex-wrap">
+                                                                    <img class="order-product"
+                                                                        src="asset/images/photos/product.png" alt="">
+                                                                    <p>Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Natus, dolores?</p>
+                                                                </div>
+                                                                <div class="product-review">
+                                                                    <a href="#">Review</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 px-2">
+                                                    <div class="card custom-card mb-3">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between gap-1 flex-wrap">
+                                                                <div class="p-main d-flex flex-wrap">
+                                                                    <img class="order-product"
+                                                                        src="asset/images/photos/product.png" alt="">
+                                                                    <p>Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Natus, dolores?</p>
+                                                                </div>
+                                                                <div class="product-review">
+                                                                    <a href="#">Review</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <div class="order-product">
+                                            <div class="card custom-card mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between gap-1 flex-wrap">
+                                                        <div class="p-main d-flex flex-wrap">
+                                                            <img class="order-product"
+                                                                src="asset/images/photos/product.png" alt="">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Natus, dolores?</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-review">
+                                            <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                <div class="my-star">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <i class="far fa-thumbs-up"></i>
+                                                    </span>
+
+                                                    <a href="">Edit</a>
+                                                </div>
+                                            </div>
+                                            <div class="comment mt-3">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                                    cupiditate ullam odio voluptas, quam illum?
+                                                </p>
+                                                <div class="screenshort d-flex gap-2 flex-wrap">
+                                                    <img class="order-product" src="asset/images/photos/product.png" alt="">
+                                                    <img class="order-product" src="asset/images/photos/product.png" alt="">
+                                                    <img class="order-product" src="asset/images/photos/product.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--    FOOTER-->
+    <footer class="py-4">
+        <div class="container pt-5">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-0 wow animate__animated animate__fadeInUp">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">INFORMATION</h6>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Online Dokan</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gift Items</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Special Offers</a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-0 wow animate__animated animate__fadeInUp">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">CUSTOMER LINKS</h6>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Online Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Peyment System</a>
+                                </li>
+                                <li>
+                                    <a href="#">Oder Now</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log In</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log out</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-0 wow animate__animated animate__fadeInUp">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">OUR STORE</h6>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Find a location nearest you</a>
+                                        </li>
+                                        <li>
+
+                                            <a href="#">Online Dokan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gift Items</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Special Offers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-0 wow animate__animated animate__fadeInUp">
+                        <div class="footer-head">
+                            <h6>Your Review for About Website</h6>
+
+                            <div class="footer-review-btn pb-3">
+                                <a href="#">Write Your Review!</a>
+                            </div>
+                            <div>
+                                <p>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Address: Mohakhali Warelass, Dhaka-20112
+                                </p>
+                                <p>
+                                    <i class="bi bi-telephone"></i>
+                                    Phone: 0179-86748764
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright mt-5 pt-4 wow animate__animated animate__fadeInUp">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>
+                            Copyright © 2023 City Dokan.com. All right reserved | Sitemap
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer-social">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-camera"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER END-->
+
+
+    <!--    JQUERY GOOGLE HOST-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="asset/js/wow-min.js"></script>
+    <script src="asset/js/slick.min.js"></script>
+
+    <!--    BOOSTRAP-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //        MOBILE MENU
+        function mobileClick() {
+            $("#mobile-menu").toggleClass('mobileAdd');
+            $("#mobileOverlay").toggleClass('mobile-overlay');
+        }
+        //        MOBILE MENU END
+
+
+        //        MOBILE MENU
+        function dMobileClick() {
+            $(".dashboard-left-menubar").toggleClass('close');
+        }
+        //        MOBILE MENU END
+
+
+        //book slick slider
+        $('.testimonial_slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: true,
+            nextArrow: $('.next'),
+            prevArrow: $('.prev'),
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+            ]
+
+        });
+
+        new WOW().init();
+
+        // Preloader Start
+        var AUTOFIREBOX = {};
+        var $window = $(window);
+
+        AUTOFIREBOX.preloader = function () {
+            $("#load").fadeOut();
+            $('#pre-loader').delay(0).fadeOut('slow');
+        };
+
+        $window.on("load", function () {
+            AUTOFIREBOX.preloader();
+        }); // Preloader End
+
+        $("#scrollup").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+            return false;
+        });
+
+        $(window).scroll(function () {
+            $('.scrollup').toggleClass('d-block', $(this).scrollTop() > 500);
+        });
+
+
+        //        for dashboard
+
+
+
+        $.each($('input, select, textarea'), function (i, element) {
+            var elementType = $(element);
+            if (elementType.attr('type') != 'checkbox') {
+                if (element.hasAttribute('required')) {
+                    $(element).closest('.form-group').find('label').addClass('required');
+                }
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
