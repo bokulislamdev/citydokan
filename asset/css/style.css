@@ -1533,6 +1533,104 @@ td {
 }
 /*LOGIN  END*/
 
+/* PRIVACY POLICY */
+.page-section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-section h1{
+    font-weight: 500;
+}
+.page-section h6{
+    margin: 0;
+    font-weight: 500;
+    font-style: italic;
+}
+.policy-title{
+    text-align: center;
+}
+.policy-title h4{
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1px solid #424242;
+    line-height: 35px;
+}
+.policy-page{
+    font-size: 15px;
+}
+
+.policy-page ul{
+    padding: 15px 0;
+    padding-left: 20px;
+}
+.policy-page ul li{
+    list-style:disc;
+    font-style: italic;
+    padding: 7px 0;
+}
+
+/* PRIVACY POLICY END*/
+
+/* SELLER DASHBOARD */
+.seller-banner{
+    background: var(--sc);
+}
+.seller-banner-left  h1{
+    font-size: 60px;
+    color: #ffffff;
+}
+.seller-banner-left p{
+    font-size: 18px;
+    color: #ffffff;
+}
+.seller-banner-right{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.read-me p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.read-me p a{
+    color: var(--sc);
+}
+
+.sell-box img{
+    width: 60px;
+    margin-right: 10px;
+}
+.sell-box h5{
+    font-weight: 500;
+}
+.sell-box p{
+    font-size: 15px;
+    color: #808080;
+    font-weight: 500;
+}
+.why-sell-2{
+    background: #f7f7f7;
+}
+
+@media only screen and (max-width:575px) {
+    .seller-banner-left h1 {
+        font-size: 40px;
+    }
+    .seller-banner-left p {
+        font-size: 16px;
+    }
+    .sell-box h5 {
+        font-size: 18px;
+    }
+
+}
+/* SELLER DASHBOARD END*/
 
 
 
@@ -1860,3 +1958,4 @@ td {
 
 
 /*DASHBOARD END*/
+
