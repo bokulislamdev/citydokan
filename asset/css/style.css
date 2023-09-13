@@ -1405,25 +1405,39 @@ td {
 /*REVIEW MODAL END*/
 
 /*LOGIN */
+
 .login-section {
     background: #f2f2f2;
 }
-
-.login-box {
-    max-width: 500px;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.login-section h4{
+    font-weight: 400;
+}
+.login-section p a{
+    color: var(--sc);
+}
+.login-box{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.login-container {
     margin: 0 auto;
     padding: 30px;
     background: var(--wc);
     border-radius: 10px;
 }
-
-.login-box h4 {
-    text-align: center;
-    font-size: 30px;
-    color: var(--sc);
+.password-main-input{
+    position: relative;
 }
+.password-main-input .icon-btn{
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
 
 .login-box label {
     color: var(--bc);
@@ -1435,10 +1449,15 @@ td {
 .login-box input {
     display: block;
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
     outline: none;
     border: 1px solid #cccccc;
+}
+
+
+.login-box input:focus{
+      border: 1px solid var(--sc);
 }
 
 .login-box button {
@@ -1460,7 +1479,58 @@ td {
     color: var(--sc);
     background: var(--wc);
 }
-
+.login-box input::placeholder{
+    font-weight: 500;
+    color: #cccccc;
+    font-size: 15px;
+}
+.login-box .forget-password{
+    text-align: center;
+}
+.login-box .forget-password a{
+    color: var(--sc);
+    font-size: 15px;
+}
+.login-box .forget-password a:hover{
+    text-decoration: underline;
+}
+.login-box .or-login p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.login-box .or-login a{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+.login-box .or-login a i{
+    margin-right: 15px;
+    font-size:22px;
+}
+.login-box .or-login a.facebook{
+    background: #1096f5;
+}
+.login-box .or-login a.facebook:hover{
+    opacity: 0.8;
+}
+.login-box .or-login a.google{
+    background: #ce4740;
+}
+.login-box .or-login a.google:hover{
+    opacity: 0.8;
+}
+.login-box .send-btn{
+    border: 1px solid #cccccc;
+    padding: 5px;
+    background: #e7e7e7;
+    border-radius: 4px;
+    right: 5px;
+    font-size: 15px;
+}
 /*LOGIN  END*/
 
 
